@@ -1,0 +1,49 @@
+/* grid item */
+#content {
+    align-self: center;
+    justify-self: center;
+    width: min-content;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    left: calc(50% - 250px);
+    width: 500px;
+    overflow: hidden;
+}
+
+.scroll-left-button, .scroll-right-button {
+    position: absolute;
+    padding: 0.8em;
+    top: 30%;
+}
+
+.scroll-left-button {
+    left: -5em;
+}
+
+.scroll-right-button {
+    right: -5em;
+}
+
+.dish {
+    min-width: 500px;
+    position: relative;
+    display: grid;
+    padding: 1em;
+    grid-template: 2em min-content / min-content 1fr;
+    gap: 1em;
+}
+
+.dish-name {
+    grid-area: 1 / 1 / 2 / 3;
+    text-align: center;
+}
+
+.dish-image {
+    width: 200px;
+    height: 200px;
+}
