@@ -10,6 +10,15 @@
     padding: 0.8em;
     top: 30%;
     cursor: pointer;
+    transition: transform 0.2s ease-in;
+}
+
+.scroll-left-button:disabled, .scroll-right-button:disabled {
+    cursor: not-allowed;
+}
+
+.scroll-left-button:active, .scroll-right-button:active {
+    transform: translateY(0.5em);
 }
 
 .scroll-left-button {
@@ -37,6 +46,8 @@
 .dish-name {
     grid-area: 1 / 1 / 2 / 3;
     text-align: center;
+    font-weight: 600;
+    font-size: 1.2em;
 }
 
 .dish-image {
