@@ -1,0 +1,25 @@
+.about-container {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.about-container > * {
+    margin-bottom: 1em;
+}
+
+.title-about {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.about-container span {
+    font-weight: bold;
+    display: inline-block;
+    width: 5em;
+    text-align: right;
+    margin-right: 1em;
+}
+
+.about-container li {
+    display: block;
+}
