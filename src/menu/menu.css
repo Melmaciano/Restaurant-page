@@ -1,17 +1,7 @@
-/* grid item */
-#content {
-    align-self: center;
-    justify-self: center;
-    width: min-content;
-    position: relative;
-}
-
 .menu {
     display: flex;
     flex-wrap: nowrap;
-    position: relative;
-    left: calc(50% - 250px);
-    width: 500px;
+    width: 480px;
     overflow: hidden;
 }
 
@@ -19,6 +9,7 @@
     position: absolute;
     padding: 0.8em;
     top: 30%;
+    cursor: pointer;
 }
 
 .scroll-left-button {
@@ -29,9 +20,14 @@
     right: -5em;
 }
 
-.dish {
-    min-width: 500px;
+.progress-bar {
     position: relative;
+    width: 100px;
+    left: calc(50% - 50px);
+}
+
+.dish {
+    min-width: 480px;
     display: grid;
     padding: 1em;
     grid-template: 2em min-content / min-content 1fr;
